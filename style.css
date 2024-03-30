@@ -171,10 +171,12 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 40px;
+  width: 40px;
   margin: auto 0;
 }
+
+
 
 .section__text {
   align-self: center;
@@ -429,4 +431,34 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+#specific-download-btns {
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translateY(-50%);
+}
+
+.btn-container {
+  position: relative;
+}
+
+#general-download-btn:focus + #specific-download-btns,
+#specific-download-btns:hover {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.specific-download-btn {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.specific-download-btn:hover {
+  color: grey;
 }
