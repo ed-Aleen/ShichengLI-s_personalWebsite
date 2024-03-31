@@ -316,6 +316,7 @@ section {
 }
 
 .section__pic-container {
+  position: relative;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -339,6 +340,28 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
+
+.details-container {
+  width: 300px; /* Set a fixed width for each project container */
+  margin: 10px; /* Add margin for spacing between project containers */
+}
+
+.project-description {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: calc(50% - 150px); /* Center the description horizontally */
+  top: calc(50% - 150px); /* Center the description vertically */
+  width: 300px; /* Set a fixed width for the description */
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity */
+  padding: 20px; /* Add padding to the description */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
 
 .article-container {
   display: flex;
@@ -364,6 +387,14 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 1px; /* Adjust the margin as needed */
+
+  
+}
+
+.text-container {
+  width: 100%; /* Set the width to 80% of its container */
+  margin: 0 auto; /* Center the text container horizontally */
 }
 
 .color-container {
@@ -482,6 +513,8 @@ footer p {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+
 
 .modal-content {
   background-color: white;
@@ -627,6 +660,6 @@ strong {
 }
 
 
-
-
-
+#uuuuu{
+  margin-bottom:100px;
+}
