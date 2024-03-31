@@ -267,6 +267,8 @@ section {
 
 /* ABOUT SECTION */
 
+
+
 #about {
   position: relative;
 }
@@ -627,20 +629,3 @@ strong {
 
 
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Apply styles for text-container and paragraphs */
-.text-container {
-  max-width: 600px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add padding around the container */
-}
-
-.text-container p {
-  margin-bottom: 20px; /* Adjust the margin between paragraphs */
-}
