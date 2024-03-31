@@ -601,10 +601,10 @@ strong {
   cursor: pointer;
   padding: 10px;
 }
-
+/* 
 .menu-links {
   display: none; /* Hide by default */
-}
+} */
 
 .menu-links li {
   margin-bottom: 10px; /* Add space between each link */
