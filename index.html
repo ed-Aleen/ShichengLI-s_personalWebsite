@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Welcome to Shicheng Li's  Website</title>
+    <link rel ="icon" type="image/jpg" href="./assets/computer-science.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -46,18 +47,22 @@
         <p class="section__text__p2">Computer Science Student & Software engineer</p>
         <div class="btn-container">    
           
-  <button id="general-download-btn" class="btn btn-color-2">Download CV</button>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#about'"
-  />
+         
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#about'"
+          />
+          
 
-  <div id="specific-download-btns">
+  
+  <button id="general-download-btn" class="btn btn-color-2" onclick="toggleSpecificButtons()">Download CV</button>
+  <div id="specific-download-btns" style="display: none;">
     <a href="./assets/李世诚简历(Shicheng Li CV).pdf" target="_blank" class="specific-download-btn">Chinese</a>
     <a href="./assets/SHICHENG LI CV.pdf" target="_blank" class="specific-download-btn">English</a>
   </div>
+  
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -580,4 +585,3 @@ related documents.
 </html>
 
 
-<!-- ????? -->

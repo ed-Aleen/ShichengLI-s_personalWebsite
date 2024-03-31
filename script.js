@@ -14,3 +14,13 @@ function hideDescription(descriptionId) {
   var description = document.getElementById(descriptionId);
   description.style.display = "none";
 }
+
+
+function toggleSpecificButtons() {
+  var specificButtons = document.getElementById("specific-download-btns");
+  if (specificButtons.style.display === "none") {
+      specificButtons.style.display = "block";
+  } else {
+      specificButtons.style.display = "none";
+  }
+}
