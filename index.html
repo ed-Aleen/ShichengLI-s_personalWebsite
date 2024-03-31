@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+ 
   <body>
     <nav id="desktop-nav">
       <div class="logo">Shicheng Li's Website</div>
@@ -22,7 +23,10 @@
       </div>
     </nav>
     <nav  id="hamburger-nav">
+
       <div class="logo">Shicheng Li's Website</div>
+
+
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,13 +42,19 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      
+    <div class="section__pic-container">
         <img src="./assets/shichengliprofile.jpg" alt="SHICHENG LI profile picture" />
-      </div>
+      </div>  
       <div class="section__text">
+
         <p class="section__text__p1">Hello, I'm</p>
+        
         <h1 class="title">Shicheng Li</h1>
+
         <p class="section__text__p2">Computer Science Student & Software engineer</p>
+        <br> <!-- New line --> 
+
         <div class="btn-container">    
           
          
@@ -69,6 +79,8 @@
 
 
         </div>
+        <br> <!-- New line --> 
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -89,7 +101,6 @@
     </section>
   
 
-    <!--  -->
     <section id="about">
       
       <p class="section__text__p1">Get To Know </p>
@@ -152,9 +163,6 @@
       />
     </section>
     <section id="experience">
-      <br> <!-- New line --> 
-      <br> <!-- New line --> 
-
       <p class="section__text__p1">Explore</p>
 
       <h1 class="title"> My Experience</h1>
@@ -332,9 +340,28 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+
+
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+    <br> <!-- New line --> 
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -345,6 +372,9 @@
                 class="project-img"
               />
             </div>
+
+
+
             <h2 class="experience-sub-title project-title">FoodFa</h2>
             <div class="btn-container">
 
@@ -398,8 +428,6 @@ related documents.
                 </div>
               </div>
               
-
-
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.youtube.com/watch?v=COEfIOKQBjA'"
@@ -480,66 +508,156 @@ related documents.
               </button>
             </div>
           </div>
+
+
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/Ros.png"
-                alt="Project 3"
+                src="./assets/pull_requester.png"
+                alt="Project 4"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Autonomous Home Monitoring Robot</h2>
+
+            
+            <h2 class="experience-sub-title project-title">Pull Requester</h2>
             <div class="btn-container">
 
               <div class="btn-container">
 
 
-              <button class="btn btn-color-2 project-btn" onclick="showDescription('description3')">
+              <button class="btn btn-color-2 project-btn" onclick="showDescription('description100')">
                 Description
             </button>
             
               
-     <div class="project-description" id="description3">
+     <div class="project-description" id="description100">
       <div class="modal-content">
-        <span class="close" onclick="hideDescription('description3')">&times;</span>
+        <span class="close" onclick="hideDescription('description100')">&times;</span>
 
-  
-                  <h2>Project Description</h2>
-                  <p>
-                    This project revolves around a TurtleBot3 robot designed to uphold specific household regulations during gatherings, ensuring a safe and organized atmosphere. It takes charge of patrolling rooms A, B, and D, with a focus on enforcing two primary rules: restricting human access to the kitchen (Room D) and preventing any mingling between the family cat and dog.
-                  </p>
-                  <h3>Notable Features</h3>
-                  <ul>
-                    <li><strong>ROS Service Integration:</strong> Allows the robot to navigate through designated areas, offering flexibility in patrol routes.</li>
-                    <li><strong>Actionlib Server:</strong> Streamlines decision-making by executing action-based directives, particularly in enforcing established rules.</li>
-                    <li><strong>SMACH State Machine:</strong> Oversees various tasks undertaken by the robot, including navigation, rule enforcement, and utilizing Text-to-Speech technology for communication.</li>
-                    <li><strong>YOLO Detection:</strong> Utilizes the YOLO algorithm for instant identification of rule violations during navigation, prompting immediate corrective actions.</li>
-                    <li><strong>Feedback and Logging:</strong> Provides ongoing feedback on rule breaches and maintains a record of infractions for thorough evaluation.</li>
-                  </ul>
-                  <p>
-                    This system epitomizes an intricate fusion of robotic autonomy, real-time detection algorithms, and prompt enforcement protocols, presenting an innovative solution for upholding decorum during social gatherings. Witness the project in action <a href="#">here</a>.
-                  </p>
+        <h2>Inspiration</h2>
+        <p>
+            When I code, I'm not a fan of writing pull requests. Think about the constantly looking through each line you changed and trying to figure out how should you make it clear for other teammates to know what you did (and like what you did).
+        </p>
+        <h3>What it does</h3>
+        <p>
+            Writes pull requests comments for you.
+        </p>
+        <h3>How we built it</h3>
+        <p>
+            We used OAuth to authenticate users through GitHub and give permissions for repository access. After that, we read off the URL and use the GitHub API to request for the difference of the two branches. We use that difference information, reformat it, and feed it to LLM on VectorShift to generate pull request bodies.
+        </p>
+        <h3>Challenges we ran into</h3>
+        <p>
+            The two biggest challenges were:
+            <ol>
+                <li>We couldn't figure out how OAuth works, and how to accommodate it into Chrome Extension.</li>
+                <li>We had little knowledge about JavaScript, which was what we used to build the extension, making it fairly challenging to debug.</li>
+            </ol>
+        </p>
+        <h3>Accomplishments that we're proud of</h3>
+        <p>
+            We overcame the two biggest challenges, we got OAuth sorted out, and we also finished the project with technologies we weren't familiar with before.
+        </p>
+        <h3>What we learned</h3>
+        <p>
+            We learned a lot of technical knowledge which without saying. We also learned how to work together as a small team, and in such a short duration.
+        </p>
+        <h3>What's next for LewLiOs KeHui</h3>
+        <p>
+            The extension has been submitted for publish reviewing, coming soon!
+        </p>
+        <h3>Built With</h3>
+        <ul>
+            <li>Chrome</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>VectorShift</li>
+        </ul>
+
                 </div>
               </div>
               
 
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=fJBNdK0D03M'"
+                onclick="location.href='https://github.com/mmmmie/Pull-Requester'"
               >
-                Live Demo
+                Github Repo
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Ros.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+
+        
+        <h2 class="experience-sub-title project-title">Autonomous Home Monitoring Robot</h2>
+        <div class="btn-container">
+
+          <div class="btn-container">
+
+
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description3')">
+            Description
+        </button>
+        
+          
+ <div class="project-description" id="description3">
+  <div class="modal-content">
+    <span class="close" onclick="hideDescription('description3')">&times;</span>
+
+
+              <h2>Project Description</h2>
+              <p>
+                This project revolves around a TurtleBot3 robot designed to uphold specific household regulations during gatherings, ensuring a safe and organized atmosphere. It takes charge of patrolling rooms A, B, and D, with a focus on enforcing two primary rules: restricting human access to the kitchen (Room D) and preventing any mingling between the family cat and dog.
+              </p>
+              <h3>Notable Features</h3>
+              <ul>
+                <li><strong>ROS Service Integration:</strong> Allows the robot to navigate through designated areas, offering flexibility in patrol routes.</li>
+                <li><strong>Actionlib Server:</strong> Streamlines decision-making by executing action-based directives, particularly in enforcing established rules.</li>
+                <li><strong>SMACH State Machine:</strong> Oversees various tasks undertaken by the robot, including navigation, rule enforcement, and utilizing Text-to-Speech technology for communication.</li>
+                <li><strong>YOLO Detection:</strong> Utilizes the YOLO algorithm for instant identification of rule violations during navigation, prompting immediate corrective actions.</li>
+                <li><strong>Feedback and Logging:</strong> Provides ongoing feedback on rule breaches and maintains a record of infractions for thorough evaluation.</li>
+              </ul>
+              <p>
+                This system epitomizes an intricate fusion of robotic autonomy, real-time detection algorithms, and prompt enforcement protocols, presenting an innovative solution for upholding decorum during social gatherings. Witness the project in action <a href="#">here</a>.
+              </p>
+            </div>
+          </div>
+          
+
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://www.youtube.com/watch?v=fJBNdK0D03M'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div id="uuuuu"><img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow" 
         onclick="location.href='./#contact'"
-      />
+      /></div>
+      
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
