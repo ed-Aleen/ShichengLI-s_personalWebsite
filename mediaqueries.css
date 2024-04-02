@@ -50,8 +50,8 @@
     margin-top: 0;
   }
   .icon img {
-    width: 35px; /* Adjusted width for smaller screens */
-    height:35px;
+    width: 30px; /* Adjusted width for smaller screens */
+    height:30px;
   }
 }
 
@@ -113,7 +113,7 @@
 
   .icon img {
     width: 30px; /* Adjusted width for smaller screens */
-    height:auto;
+    height:30px ;
 
   }
 }
@@ -122,8 +122,8 @@
 
 
 .icon img {
-  max-width: 100%; /* Limit the maximum width */
-  height: auto; /* Maintain aspect ratio */
+  width: 60px; /* Adjusted width for smaller screens */
+    height:60px ;
 }
 
 
