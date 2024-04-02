@@ -8,6 +8,8 @@
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -514,8 +516,6 @@ footer p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-
 .modal-content {
   background-color: white;
   margin: auto;
@@ -525,7 +525,10 @@ footer p {
   width: 80%;
   margin-top: 10%;
   position: relative;
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 70vh; /* Sets a maximum height */
 }
+
 
 .close {
   position: absolute;
@@ -534,6 +537,7 @@ footer p {
   font-size: 24px;
   cursor: pointer;
 }
+
 
 h2 {
   margin-top: 0;
@@ -662,4 +666,293 @@ strong {
 
 #uuuuu{
   margin-bottom:100px;
+}
+
+  .icon img {
+    width: 70px; /* Default width */
+    height: 70px; /* Maintain aspect ratio */
+  }
+
+
+  .toggle-btn{
+background:#4864ff ;
+color:#fff;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 30px;
+border-radius: 20px;
+cursor: pointer;
+  }
+
+  .root{
+    --background-color:#fff;
+    --text-color:#555;
+    --title-color:#000
+
+  }
+
+  .dark-theme{
+      --background-color:#000;
+      --text-color:#999;
+      --title-color:#fff
+  }
+
+  .toggle-btn img{
+    width:25px;
+    margin-left: 10px;
+  }
+
+
+  .dark-theme .btn-color-2 {
+    background-color: #fff; /* Or any other visible color in dark mode */
+    color: #000; /* Or any other color that contrasts well with the background */
+    border-color: #fff; /* Optional: change the border color if needed */
+}
+
+
+.dark-theme .contact-info-container a,
+.dark-theme .contact-info-container p {
+    color: #ccc; /* Choose a lighter color for better visibility */
+}
+
+.dark-theme .contact-icon {
+    filter: invert(100%); /* Inverts the color of icons for better visibility */
+}
+
+.dark-theme .specific-download-btn {
+  color: #fff; /* Change the text color to white for visibility */
+  background-color: #4864ff; /* Optional: change background color if needed */
+  border-color: #fff; /* Optional: change border color to match */
+}
+
+.menu-links .toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit; /* Ensures text color matches the other links */
+  cursor: pointer;
+}
+
+.menu-links .toggle-btn img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.menu-links .toggle-btn {
+  background: #4864ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Adjust width to fill the container */
+  padding: 10px;
+  margin: 5px 0; /* Add some margin for spacing */
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu-links li a,
+.menu-links .toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #343a40; /* Change to your desired text color */
+  font-size: 16px; /* Adjust font size as needed */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-links .toggle-btn img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+}
+
+
+
+.nav-links li, 
+.nav-links .toggle-btn {
+  margin-right: 15px; /* Space between each link/button */
+  display: inline; /* Align items in a row */
+}
+
+.nav-links li a,
+.nav-links .toggle-btn {
+  text-decoration: none;
+  color: #343a40; /* Text color */
+  font-size: 16px; /* Font size */
+  display: flex; /* To align the text and icon */
+  align-items: center; /* Vertical alignment */
+  padding: 10px 20px; /* Padding around text and icon */
+  cursor: pointer; /* Cursor type */
+}
+
+.nav-links .toggle-btn img {
+  width: 25px; /* Size of the moon icon */
+  margin-left: 10px; /* Space between text and icon */
+}
+
+
+#specific-demo-btns .btn {
+  display: block; /* Each button on a new line */
+  margin-top: 10px; 
+}
+.dark-theme #hamburger-nav,
+.dark-theme .hamburger-menu,
+.dark-theme .menu-links {
+  background-color: #1a1a1a; /* Dark background for the hamburger nav */
+  color: #f0f0f0; /* Light text color for better readability */
+}
+
+.dark-theme .hamburger-icon span {
+  background-color: #f0f0f0; /* Light color for hamburger lines */
+}
+
+.dark-theme .menu-links a {
+  color: #f0f0f0; /* Light color for links */
+}
+
+.dark-theme .menu-links a:hover {
+  color: #c0c0c0; /* Slightly darker color on hover for contrast */
+}
+
+
+.dark-theme .icon.arrow {
+  filter: invert(100%); /* Inverts the color of arrow icons specifically, if needed */
+}
+
+.dark-theme .icon.u{
+  filter: invert(100%); /* Inverts the color of arrow icons specifically, if needed */
+
+
+}
+
+
+.specific-download-btn {
+    display: block; /* Each link on a new line */
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Darker text color for contrast */
+    padding: 8px 12px; /* Padding for better spacing */
+    margin-top: 5px; /* Space between buttons */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.specific-download-btn:hover {
+    background-color: #e7e7e7; /* Slightly darker on hover */
+    color: #222; /* Slightly darker text color on hover */
+}
+
+.download-btn-container {
+  position: relative; /* Establish relative positioning */
+}
+
+#general-download-btn {
+  /* ... existing styles ... */
+  position: relative; /* For z-index stacking context */
+  z-index: 2; /* Higher than the specific buttons */
+}
+
+
+.project-img {
+  border-radius: 2rem; /* Rounded corners for images */
+  width: 80%; /* Width of image relative to its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem; /* Space below the image */
+}
+
+.project-title {
+  color: black; /* Color of project title */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.project-btn {
+  color: black; /* Color of project button text */
+  border-color: rgb(163, 163, 163); /* Color of project button border */
+}
+.details-container1 {
+  flex: 1; /* Each container takes equal width */
+  min-width: 250px; /* Minimum width for each project container */
+  max-width: 300px; /* Maximum width for each project container */
+  margin: 10px; /* Margin for spacing between project containers */
+  padding: 1.5rem; /* Padding inside each project container */
+  background: white; /* Background color */
+  border-radius: 2rem; /* Rounded corners */
+  border: rgb(53, 53, 53) 0.1rem solid; /* Border settings */
+  border-color: rgb(163, 163, 163);
+  text-align: center; /* Align text to the center */
+}
+
+
+.section__pic-container {
+  position: relative;
+  width: 400px; /* Replace with the actual width of your container */
+  height: 400px; /* Replace with the actual height of your container */
+  margin: auto;
+  overflow: hidden; /* Ensures the images do not flow outside the container */
+}
+.pattern {
+  width: 70px; /* Adjust width to desired size */
+  height: 70px; /* Adjust height to desired size */
+  position: absolute;
+  top: 50%; /* Center vertically relative to the nearest positioned ancestor */
+  left: 50%; /* Center horizontally relative to the nearest positioned ancestor */
+  transform: translate(-50%, -50%) rotate(40deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+
+.pattern img {
+  width: 200px;
+  position: absolute;
+  top: 0; /* Center vertically */
+  left: 0; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the images */
+  z-index: -1; /* Lower z-index so they're below the profile picture */
+}
+
+
+
+.pattern img:nth-child(1){
+  transform: rotate(-45deg) translate(-70px,-50px);
+}
+
+.pattern img:nth-child(2){
+  transform: rotate(65deg) translate(-70px,-50px);
+}
+
+@keyframes slideHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100px); /* Image will move left */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideVertical {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px); /* Image will move up */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
