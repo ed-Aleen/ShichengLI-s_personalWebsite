@@ -912,70 +912,6 @@ cursor: pointer;
 }
 
 
-.section__pic-container {
-  position: relative;
-  width: 400px; /* Replace with the actual width of your container */
-  height: 400px; /* Replace with the actual height of your container */
-  margin: auto;
-  overflow: hidden; /* Ensures the images do not flow outside the container */
-}
-.pattern {
-  width: 70px; /* Adjust width to desired size */
-  height: 70px; /* Adjust height to desired size */
-  position: absolute;
-  top: 50%; /* Center vertically relative to the nearest positioned ancestor */
-  left: 50%; /* Center horizontally relative to the nearest positioned ancestor */
-  transform: translate(-50%, -50%) rotate(40deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-}
-
-
-.pattern img {
-  width: 200px;
-  position: absolute;
-  top: 0; /* Center vertically */
-  left: 0; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the images */
-  z-index: -1; /* Lower z-index so they're below the profile picture */
-}
-
-
-
-.pattern img:nth-child(1){
-  transform: rotate(-45deg) translate(-70px,-50px);
-}
-
-.pattern img:nth-child(2){
-  transform: rotate(65deg) translate(-70px,-50px);
-}
-
-@keyframes slideHorizontal {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-100px); /* Image will move left */
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideVertical {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px); /* Image will move up */
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .nav-links li a {
   font-size: 1.0rem; /* Reduced font size */
   margin-right: 10px; /* Adjusted spacing between items */
@@ -1029,3 +965,10 @@ nav {
 }
 
 /*  */
+
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  z-index: 10; /* Ensure the menu is above other content */
+}
