@@ -10,6 +10,10 @@
   #projects {
     height: fit-content;
   }
+  .icon img {
+    width: 40px; /* Adjusted width for smaller screens */
+    height:40px
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,7 +49,13 @@
   .about-containers {
     margin-top: 0;
   }
+  .icon img {
+    width: 35px; /* Adjusted width for smaller screens */
+    height:35px;
+  }
 }
+
+
 
 @media screen and (max-width: 600px) {
   #contact,
@@ -100,4 +110,20 @@
   .text-container {
     text-align: justify;
   }
+
+  .icon img {
+    width: 30px; /* Adjusted width for smaller screens */
+    height:auto;
+
+  }
 }
+
+
+
+
+.icon img {
+  max-width: 100%; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+

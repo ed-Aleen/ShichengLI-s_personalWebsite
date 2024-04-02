@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +13,11 @@
   </head>
  
   <body>
+
     <nav id="desktop-nav">
+
+      <a href='#' class="icon"><img src="./assets/computer-science.png"></a>
+
       <div class="logo">Shicheng Li's Website</div>
       <div>
         <ul class="nav-links">
@@ -19,7 +25,13 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="toggle-btn" id="btn" > <span>
+            Dark
+          </span>
+          <img src="./assets/moon.png"></li>
+          
         </ul>
+
       </div>
     </nav>
     <nav  id="hamburger-nav">
@@ -38,14 +50,32 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <div class="toggle-btn" id="btn-hum">
+              <span>Dark</span>
+              <img src="./assets/moon.png">
+            </div>
+          </li>
         </div>
       </div>
     </nav>
     <section id="profile">
       
-    <div class="section__pic-container">
+      <!-- <img src="./assets/background.png">
+      <img src="./assets/background.png"> -->
+      <div class="section__pic-container">
+
         <img src="./assets/shuaige.PNG" alt="SHICHENG LI profile picture" />
+        <div class="pattern">
+<!-- 
+            <img src="./assets/background.png">
+            <img src="./assets/background.png"> -->
+
+
+          </div>
       </div>  
+
+
       <div class="section__text">
 
         <p class="section__text__p1">Hello, I'm</p>
@@ -85,13 +115,13 @@
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon u"
             onclick="location.href='https://www.linkedin.com/in/shicheng-li-56616b25a/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon u"
             onclick="location.href='https://github.com/ed-Aleen'"
           />
 
@@ -129,30 +159,13 @@
               <p>King's College London<br />Computer Science BSc</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-container" > 
             <p>I'm a passionate Computer Science student studying at a top world university.</p>
             <p><strong>Academics:</strong> Currently working towards a First Class Honors in Computer Science at King's College London. I have developed proficiency in multiple programming languages, adapted seamlessly to leading operating systems, and enhanced my skills through practical project experience.</p>
             <p><strong>Aspiration:</strong> Future-focused Software Engineer with a passion for technology and programming. Strong academic performance, scoring notably high in core modules. Practical experience in real-world projects, emphasizing problem-solving skills.</p>
             <p><strong>Technical Skills:</strong> Proficient in Java, C++, JavaFX, Django, HTML, CSS. Intermediate in Scala, Python, JavaScript, TypeScript, React Native, and ROS. Eager to contribute my skills and passion to a dynamic software development role. Open to exciting opportunities where I can bring innovation, problem-solving, and a collaborative spirit.</p>
           </div>
-          <!-- <div class="text-container">
-            <p>
-              I'm a passionate Computer Science student studying at a top world university.
-            </p>
-            <br />
-            <p>
-              <strong>Academics:</strong> Currently working towards a First Class Honors in Computer Science at King's College London. I have developed proficiency in multiple programming languages, adapted seamlessly to leading operating systems, and enhanced my skills through practical project experience.
-            </p>
-            <br />
-            <p>
-              <strong>Aspiration:</strong> Future-focused Software Engineer with a passion for technology and programming. Strong academic performance, scoring notably high in core modules. Practical experience in real-world projects, emphasizing problem-solving skills.
-            </p>
-            <br />
-            <p>
-              <strong>Technical Skills:</strong> Proficient in Java, C++, JavaFX, Django, HTML, CSS. Intermediate in Scala, Python, JavaScript, TypeScript, React Native, and ROS. Eager to contribute my skills and passion to a dynamic software development role. Open to exciting opportunities where I can bring innovation, problem-solving, and a collaborative spirit
-            </p>
-            
-          </div> -->
+  
         </div>
       </div>
       <img
@@ -364,7 +377,7 @@
 
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container1 color-container">
             <div class="article-container">
               <img
                 src="./assets/foodfa.png"
@@ -385,7 +398,7 @@
             
               
      <div class="project-description" id="description1">
-      <div class="modal-content">
+      <div class="modal-content" id="description1">
         <span class="close" onclick="hideDescription('description1')">&times;</span>
         
   
@@ -426,17 +439,27 @@ related documents.
 
                   </p>
                 </div>
-              </div>
+
               
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=COEfIOKQBjA'"
-              >
-                Live Demo
-              </button>
+              
+              
+          
             </div>
+            
+            
+
+            <button id="general-demo-btn-project2" class="btn btn-color-2" onclick="toggleDemoButtons('specific-demo-btns-project2')">Live Demos</button>
+            
+            <div id="specific-demo-btns-project2" style="display: none;">
+              <button class="btn btn-color-2" onclick="location.href='https://www.youtube.com/watch?v=COEfIOKQBjA'">YouTube Demo</button>
+              <button class="btn btn-color-2" onclick="location.href='https://www.bilibili.com/video/BV1Cx421D7Tp/'">Bilibili Demo</button>
+            
+        
           </div>
-          <div class="details-container color-container">
+            </div>
+            
+          </div>
+          <div class="details-container1 color-container">
             <div class="article-container">
               <img
                 src="./assets/Teamwork.jpg"
@@ -457,7 +480,7 @@ related documents.
         Description
     </button>
    <div class="project-description" id="description2">
-  <div class="modal-content">
+  <div class="modal-content" id="description2">
     <span class="close" onclick="hideDescription('description2')">&times;</span>
     <h2>Project Description</h2>
     <p>
@@ -500,18 +523,24 @@ related documents.
   </div>
 </div>
 
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=i4GhynKFHVc'"
-              >
-                Live Demo
+
               </button>
+
+
+
+              <button id="general-demo-btn-project2" class="btn btn-color-2" onclick="toggleDemoButtons('specific-demo-btns-project3')">Live Demos</button>
+              <div id="specific-demo-btns-project3" style="display: none;">
+                <button class="btn btn-color-2" onclick="location.href='https://www.youtube.com/watch?v=i4GhynKFHVc'">YouTube Demo</button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.bilibili.com/video/BV1Nt421n7fB/'">Bilibili Demo</button>
+              
+          
             </div>
+          </div>
           </div>
 
 
 
-          <div class="details-container color-container">
+          <div class="details-container1 color-container">
             <div class="article-container">
               <img
                 src="./assets/pull_requester.png"
@@ -533,7 +562,7 @@ related documents.
             
               
      <div class="project-description" id="description100">
-      <div class="modal-content">
+      <div class="modal-content" id="description100">
         <span class="close" onclick="hideDescription('description100')">&times;</span>
 
         <h2>Inspiration</h2>
@@ -588,11 +617,15 @@ related documents.
                 Github Repo
               </button>
             </div>
+
+
+
+
           </div>
         </div>
       </div>
 
-      <div class="details-container color-container">
+      <div class="details-container1 color-container">
         <div class="article-container">
           <img
             src="./assets/Ros.png"
@@ -614,7 +647,7 @@ related documents.
         
           
  <div class="project-description" id="description3">
-  <div class="modal-content">
+  <div class="modal-content" id="description3">
     <span class="close" onclick="hideDescription('description3')">&times;</span>
 
 
@@ -635,14 +668,23 @@ related documents.
               </p>
             </div>
           </div>
+
+          <button id="general-demo-btn-project4" class="btn btn-color-2" onclick="toggleDemoButtons('specific-demo-btns-project4')">Live Demos</button>
+    
+    
+          <div id="specific-demo-btns-project4" style="display: none;">
+      <button class="btn btn-color-2" onclick="location.href='https://www.youtube.com/watch?v=fJBNdK0D03M'">YouTube Demo</button>
+      <button class="btn btn-color-2" onclick="location.href=' https://b23.tv/rtzLAB9'">Bilibili Demo</button>
+    
+
           
 
-          <button
+          <!-- <button
             class="btn btn-color-2 project-btn"
             onclick="location.href='https://www.youtube.com/watch?v=fJBNdK0D03M'"
           >
             Live Demo
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -716,10 +758,11 @@ related documents.
           </ul>
         </div>
       </nav>
-      <p>Thank you for viewing my personal website!</p>
+      <p>@Thank you for viewing my personal website!</p>
       <p>Shicheng Li </p>
 
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
