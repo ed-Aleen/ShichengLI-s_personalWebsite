@@ -1024,3 +1024,6 @@ nav {
  
 
  /*  */
+ .dark-theme #hamburger-nav .logo a {
+  color: rgb(119, 122, 112); 
+}
