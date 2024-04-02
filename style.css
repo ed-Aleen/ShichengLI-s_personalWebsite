@@ -615,7 +615,8 @@ strong {
 }
 
 .logo {
-  font-size: 20px; /* Increase font size */
+   
+  font-size: 25px; /* Increase font size */
   font-weight: bold;
   margin-right: 20px; /* Add some space between logo and links */
 }
@@ -971,11 +972,11 @@ cursor: pointer;
 }
 
 .nav-links li a {
-  font-size: 1.2rem; /* Reduced font size */
+  font-size: 1.0rem; /* Reduced font size */
   margin-right: 10px; /* Adjusted spacing between items */
   padding: 5px 10px; /* Reduced padding for better fit */
   text-decoration: none; /* Optional: remove underline from links */
-  color: black; /* Adjust color as needed */
+  color: rgb(12, 10, 10); /* Adjust color as needed */
 }
 
 .nav-links li {
@@ -985,4 +986,8 @@ cursor: pointer;
 nav {
   height: auto; /* Adjust the height to fit the content */
   padding: 5px 0; /* Reduced vertical padding */
+}
+
+.dark-theme .nav-links a {
+  color: rgb(71, 76, 80);
 }
