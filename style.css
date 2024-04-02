@@ -607,6 +607,7 @@ strong {
 
 /* Styling for the desktop navigation */
 #desktop-nav {
+  background-image: url('assets/background.jpg');
   display: flex;
   align-items: center;
   padding: 10px 20px; /* Reduce padding for a more compact look */
@@ -700,17 +701,21 @@ cursor: pointer;
   }
 
   .root{
+    /* --nav-background-image: url('assets/background.jpg'); */
+    
     --background-color:#fff;
-    --text-color:#555;
+    --text-color:#584848;
     --title-color:#000
 
   }
 
   .dark-theme{
+    --nav-background-image: url('assets/black.jpg');
+
       --background-color:#000;
       --text-color:#999;
       --title-color:#fff
-      --background-image: url('assets/black.jpg')
+      /* --background-image: url('assets/black.jpg') */
   }
 
   .toggle-btn img{
@@ -991,3 +996,14 @@ nav {
 .dark-theme .nav-links a {
   color: rgb(71, 76, 80);
 }
+
+
+
+#desktop-nav, #hamburger-nav {
+    background-image: var(--nav-background-image);
+    background-size: cover; /* This ensures the background covers the entire nav area */
+    background-repeat: no-repeat; /* This prevents the background from repeating */
+    background-position: center; /* This centers the background image */
+}
+
+
