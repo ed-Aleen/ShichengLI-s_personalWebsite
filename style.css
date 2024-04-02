@@ -1013,3 +1013,28 @@ nav {
   width: auto; /* Maintain aspect ratio */
   vertical-align: middle; /* Align image with text */
 }
+
+
+
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#profile, #about, #experience, #projects, #contact, .btn {
+  animation: fadeIn 2s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#profile, #about, #experience, #projects, #contact, .btn {
+  opacity: 0;
+}
+
