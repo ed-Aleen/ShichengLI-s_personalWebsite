@@ -1007,3 +1007,9 @@ nav {
 }
 
 
+
+.logo img {
+  height: 2rem; /* Adjust height to match font size */
+  width: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align image with text */
+}
