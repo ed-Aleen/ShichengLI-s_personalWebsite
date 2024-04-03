@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <!--  -->
  
   <body> 
 
@@ -20,7 +19,7 @@
       <a href='https://shichenglidev.com/' class="icon"><img src="./assets/computer-science.png"></a>
 
       <div class="logo">Shicheng Li's Website 👨‍💻</div>
-      <div>
+      <div class="nav-links" >
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -29,7 +28,7 @@
           <li class="toggle-btn" id="btn" > <span>
             Dark
           </span>
-          <img src="./assets/moon.png"></li>
+          <img src="./assets/dlm.png"></li>
           
         </ul>
 
@@ -59,7 +58,7 @@
           <li>
             <div class="toggle-btn" id="btn-hum">
               <span>Dark</span>
-              <img src="./assets/moon.png">
+              <img src="./assets/dlm.png">
             </div>
           </li>
         </div>
@@ -95,13 +94,15 @@
             onclick="location.href='./#about'"
           />
           
+<!-- 有问题需要改进 -->
+<!-- 
+<a id="general-download-btn" class="btn btn-color-2" href="./assets/李世诚简历.pdf" target="_blank">Download CV</a> -->
 
-  
-  <button id="general-download-btn" class="btn btn-color-2" onclick="toggleSpecificButtons()">Download CV</button>
-  <div id="specific-download-btns" style="display: none;">
+  <button id="general-download-btn" class="btn btn-color-2" onclick="toggleSpecificButtons()">Download CV</button> 
+   <div id="specific-download-btns" style="display: none;">
     <a href="./assets/李世诚简历.pdf" target="_blank" class="specific-download-btn">Chinese</a>
     <a href="./assets/SHICHENG LI CV.pdf" target="_blank" class="specific-download-btn">English</a>
-  </div>
+  </div> 
   
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
