@@ -7,11 +7,12 @@
   padding: 0;
 }
 
+
 body {
-  /* background-image: var(--background-image); */
+  background-image: var(--background-image);
 
-
-  /* background-image: url('/assets/background.jpg'); */
+  
+  /* background-image: url('assets/background.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -483,24 +484,33 @@ footer p {
   font-size: 15px;
   display: none;
   position: absolute;
-  top: 50%;
-  right: calc(100% + 10px);
-  transform: translateY(-50%);
+  top: 100%; /* Adjust to position below the button */
+  left: 50%; /* Center align with the parent button */
+  transform: translateX(-50%); /* Center align horizontally */
+  background-color: #fff; /* Optional: background color for visibility */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: to add a subtle shadow */
+  border-radius: 5px; /* Optional: for rounded corners */
+  padding: 10px; /* Optional: for internal spacing */
+  z-index: 100; /* Ensure it appears above other content */
 }
 
-.btn-container {
-  position: relative;
+.specific-download-btn {
+  display: block; /* Display as block for full width */
+  margin-bottom: 5px; /* Add space between buttons */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  text-align: center; /* Center the text */
+}
+
+.specific-download-btn:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last button */
 }
 
 #general-download-btn:focus + #specific-download-btns,
-#specific-download-btns {
-  font-size: 15px;
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: calc(70% + 10px); /* Adjust the value to move it slightly more to the right */
-  transform: translateY(-50%);
+#specific-download-btns:hover {
+  display: block; /* Show on hover or focus */
 }
+
 
 .specific-download-btn {
   padding: 0.5rem;
@@ -525,23 +535,25 @@ footer p {
 }
 .modal-content {
   background-color: white;
-  margin: auto;
   padding: 20px;
   border-radius: 10px; /* Rounded corners for a smoother look */
-  max-width: 600px; /* Adjust for better proportion */
-  width: 90%; /* Increased width for better content visibility */
-  margin-top: 5%; /* Less top margin for tighter composition */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  position: relative;
-  overflow-y: auto; /* Enables vertical scrolling */
-  max-height: 80vh; /* Increased maximum height */
+  width: 90%; /* Controlled width for better content visibility */
+  max-width: 600px; /* Maximum width */
   border: 1px solid #ddd; /* Subtle border for definition */
   font-family: 'Arial', sans-serif; /* Aesthetic font choice */
   color: #333; /* Soft color for the text */
   text-align: justify; /* Improved text alignment */
+  position: fixed; /* Positioning relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  z-index: 1000; /* Ensure it's above other elements */
+  overflow-y: auto; /* Scrollbar for overflow */
+  max-height: 80vh; /* Control maximum height */
 }
 
-
+/* Close Button Style */
 .close {
   position: absolute;
   top: 10px;
@@ -549,6 +561,19 @@ footer p {
   font-size: 24px;
   cursor: pointer;
 }
+
+/* Adjust the backdrop of the modal */
+.project-description {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: none;
+  z-index: 999; /* Ensure it's below the modal content but above other elements */
+}
+
 
 
 h2 {
@@ -702,7 +727,7 @@ cursor: pointer;
 
   .root{
     /* --nav-background-image: url('assets/background.jpg'); */
-    
+    --background-image: url('assets/background.jpg');
     --background-color:#fff;
     --text-color:#584848;
     --title-color:#000
@@ -710,12 +735,13 @@ cursor: pointer;
   }
 
   .dark-theme{
-    --nav-background-image: url('assets/black.jpg');
 
+    --nav-background-image: url('assets/black.jpg');
+      --background-image: url('assets/background-dark.jpg');  
       --background-color:#000;
       --text-color:#999;
       --title-color:#fff
-      /* --background-image: url('assets/black.jpg') */
+
   }
 
   .toggle-btn img{
@@ -824,11 +850,21 @@ cursor: pointer;
   display: block; /* Each button on a new line */
   margin-top: 10px; 
 }
+
+
+
+
+.dark-theme .toggle-btn,
 .dark-theme #hamburger-nav,
 .dark-theme .hamburger-menu,
 .dark-theme .menu-links {
   background-color: #1a1a1a; /* Dark background for the hamburger nav */
   color: #f0f0f0; /* Light text color for better readability */
+}
+
+.dark-theme .high-nav a{
+  color: #f0f0f0;
+  
 }
 
 .dark-theme .hamburger-icon span {
@@ -975,3 +1011,4 @@ nav {
 
 
 /*  */
+
