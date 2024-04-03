@@ -10,7 +10,6 @@
 
 body {
   background-image: var(--background-image);
-
   
   /* background-image: url('assets/background.jpg'); */
   background-size: cover;
@@ -851,13 +850,16 @@ cursor: pointer;
   margin-top: 10px; 
 }
 
+.dark-theme .toggle-btn{background:#373935 ;
+  color: #f0f0f0;}
 
 
 
-.dark-theme .toggle-btn,
+
 .dark-theme #hamburger-nav,
 .dark-theme .hamburger-menu,
 .dark-theme .menu-links {
+
   background-color: #1a1a1a; /* Dark background for the hamburger nav */
   color: #f0f0f0; /* Light text color for better readability */
 }
@@ -1011,4 +1013,92 @@ nav {
 
 
 /*  */
+
+
+
+.logo:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.nav-links li a {
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #7fe465; /* Change to your desired hover color */
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.arrow {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.section__pic-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease;
+  border-color: #007bff; /* Adjust the border color as needed */
+}
+
+
+ .icon.contact-icon:hover {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Apply the typewriter effect to element with ID 'name' */
+#name {
+  font-family: 'Arial', sans-serif; /* Professional font */
+  font-size: 3.0em; /* Increased font size for larger text */
+  font-weight: bold; /* Makes the text bold */
+  color: #55575a; /* Dark color for professionalism */
+  overflow: hidden; /* Ensures the content doesn't overflow */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Center the text */
+  margin-bottom: 10px; /* Space below the element */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  max-width: fit-content; /* Adjust the width as per the content */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+
+
 
