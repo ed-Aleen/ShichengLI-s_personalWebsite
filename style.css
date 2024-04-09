@@ -1100,5 +1100,32 @@ nav {
 }
 
 
+.modal-content {
+  background-color: #f4f4f4; /* Light grey, for less strain on the eyes */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Dark grey text for better readability */
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark grey to match the text */
+  cursor: pointer;
+  transition: color 0.2s;
+}
 
+.close:hover {
+  color: #ff6b6b; /* Gentle red on hover for intuitive interaction */
+}
+
+.btn:hover {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
 
