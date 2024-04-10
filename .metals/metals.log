@@ -336,3 +336,6 @@ create table fingerprints(
 18:50:56.033 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 31 of 247M
 2024.04.10 18:50:56 WARN  no build tool detected in workspace '/Users/allenli/ShichengLI-s_personalWebsite'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2024.04.10 18:50:56 WARN  Build server is not auto-connectable.
+2024.04.10 20:06:37 INFO  Shutting down server
+2024.04.10 20:06:37 INFO  shutting down Metals
+2024.04.10 20:06:37 INFO  Exiting server

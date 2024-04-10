@@ -15,10 +15,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
+}
+
+.cursor{
+  width: 20px;
+  height: 20px;
+  border: white;
+
 }
 
 html {
@@ -1017,9 +1023,21 @@ nav {
 
 
 /*  */
+.logo:hover {
+  animation: scaleUpDown 2s ease-in-out infinite;
+}
+
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1); /* Normal scale */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+}
 
 
-
+/* 
 .logo:hover {
   animation: pulse 1s infinite;
 }
@@ -1028,7 +1046,7 @@ nav {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
-}
+} */
 
 .nav-links li a {
   transition: color 0.3s ease;
@@ -1133,3 +1151,15 @@ nav {
   to { transform: scale(1.1); }
 }
 
+
+/* 
+
+.custom-cursor {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('/assets/cursor.svg'), pointer;
+} */
