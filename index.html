@@ -718,54 +718,61 @@ related documents.
     <br> <!-- New line --> 
  
 
-    <section id="contact">
+<section id="contact">
     
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:Shicheng.li@kcl.ac.uk ">Shicheng.li@kcl.ac.uk </a></p>
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+              onclick="window.location.href='mailto:Shicheng.li@kcl.ac.uk';"
+            />
+            <!-- The email paragraph is now hidden -->
+            <p style="display: none;"><a href="mailto:Shicheng.li@kcl.ac.uk">Shicheng.li@kcl.ac.uk</a></p>
         </div>
         
         <div class="contact-info-container">
-          
-          <img
-            src="./assets/phone123.png"
-            alt="phone icon"
-            class="icon contact-icon"
-          />
-          <p><a href="tel:+4407774157321">(+44)07774157321</a></p>
+            <img
+              src="./assets/phone123.png"
+              alt="Phone icon"
+              class="icon contact-icon"
+              onclick="window.location.href='tel:+4407774157321';"
+            />
+            <!-- The phone number paragraph is now hidden -->
+            <p style="display: none;"><a href="tel:+4407774157321">(+44)07774157321</a></p>
         </div>
+    
+<div class="contact-info-container">
+    <img
+      src="./assets/linkedin.png"
+      alt="LinkedIn icon"
+      class="icon contact-icon"
+      onclick="window.open('https://www.linkedin.com/in/shicheng-li-56616b25a/', '_blank');"
+    />
+    <!-- The LinkedIn link paragraph is now hidden -->
+    <p style="display: none;"><a href="https://www.linkedin.com/in/shicheng-li-56616b25a/">LinkedIn</a></p>
+</div>
 
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/shicheng-li-56616b25a/">LinkedIn</a></p>
-        </div>
-
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/wechat.png"
-            alt="Wechat icon"
-            class="icon contact-icon"
-          />
-          <p><a href='assets/qr.jpg'>Wechat</a></p>
-        </div>
-        
+<div class="contact-info-container">
+    <img
+      src="./assets/wechat.png"
+      alt="Wechat icon"
+      class="icon contact-icon"
+      onclick="window.open('assets/qr.jpg', '_blank');"
+    />
+    <!-- The Wechat link paragraph is now hidden -->
+    <p style="display: none;"><a href="assets/qr.jpg">Wechat</a></p>
+</div>
 
       
-      
 
-    </section>
+    </section> 
+   
+
+    
     <footer>
       <nav>
         <div class="nav-links-container">
