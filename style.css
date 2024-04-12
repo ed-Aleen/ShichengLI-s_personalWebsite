@@ -231,6 +231,14 @@ section {
   height: 2rem;
 }
 
+.icon1{
+  cursor: pointer;
+  height: 2rem;
+  width: 60px; /* Default width */
+  height: 60px; /* Maintain aspect ratio */
+
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -721,6 +729,10 @@ strong {
     height: 70px; /* Maintain aspect ratio */
   }
 
+  .icon1 img {
+    width: 70px; /* Default width */
+    height: 70px; /* Maintain aspect ratio */
+  }
 
   .toggle-btn{
 background:#a2a3a9 ;
@@ -1036,7 +1048,18 @@ nav {
   }
 }
 
+.icon1:hover {
+  animation: scaleUpDown 2s ease-in-out infinite;
+}
 
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1); /* Normal scale */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+}
 /* 
 .logo:hover {
   animation: pulse 1s infinite;
