@@ -37,7 +37,19 @@ function toggleSpecificButtons() {
 //       specificButtons.style.display = "none";
 //   }
 // }
+function toggleDemoButtons(id) {
+  var demoButtons = document.getElementById(id);
+  if (demoButtons.style.display === "none") {
+    demoButtons.style.display = "block";
+  } else {
+    demoButtons.style.display = "none";
+  }
 
+  function hideDescription(descriptionId) {
+    var modal = document.getElementById(descriptionId);
+    modal.style.display = "none";
+  }
+}
 
 document.addEventListener('DOMContentLoaded', (event) => {
   document.body.style.backgroundImage = "url('/assets/background.jpg')";
