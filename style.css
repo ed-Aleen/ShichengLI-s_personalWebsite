@@ -1186,3 +1186,15 @@ nav {
   justify-content: center;
   cursor: url('/assets/cursor.svg'), pointer;
 } */
+h2 a:hover {
+  text-decoration: none;
+}
+
+.footer a {
+  color: #00aaff; /* Set a brighter color; adjust as needed */
+  text-decoration: none; /* This removes the underline */
+}
+
+a:hover {
+  text-decoration: none; /* This ensures no underline appears on hover */
+}
