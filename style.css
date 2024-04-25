@@ -1198,3 +1198,28 @@ h2 a:hover {
 a:hover {
   text-decoration: none; /* This ensures no underline appears on hover */
 }
+
+:root {
+  --btn-border: 2px solid #7b7e81; /* Light mode border color */
+  --btn-bg: #ffffff; /* Light mode background color */
+  --btn-text: #56616c; /* Light mode text color */
+}
+
+.dark-theme {
+  --btn-border: 2px solid #ffffff; /* Dark mode border color */
+  --btn-bg: #333333; /* Dark mode background color */
+  --btn-text: #ffffff; /* Dark mode text color */
+}
+#projects .btn {
+  border: var(--btn-border);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 10px 20px;
+  margin: 5px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#projects .btn:hover {
+  background-color: var(--btn-text); /* Inverse of the text color */
+  color: var(--btn-bg); /* Inverse of the background color */
+}
