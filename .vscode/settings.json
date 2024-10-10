@@ -3,3 +3,27 @@
     "**/target": true
   }
 }
+
+
+
+
+
+
+
+
+
+/**
+ * 计算两个整数的和。
+ *
+ * @param x 第一个加数。
+ * @param y 第二个加数。
+ * @return 返回两个整数的和。
+ * @throws IllegalArgumentException 如果 x 或 y 是负数。
+ * @see Math#addExact(int, int)
+ */
+//  public int add(int x, int y) {
+//   if (x < 0 || y < 0) {
+//       throw new IllegalArgumentException("Both numbers must be non-negative.");
+//   }
+//   return x + y;
+// }
